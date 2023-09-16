@@ -119,9 +119,12 @@ span{
 }
 
 @media screen and (max-width: 400px) {
-  .list1 .top .home .bottom{   
+  .list1 {   
     flex-direction: column;
   }
+.top .bottom .home{
+	flex-direction: row; 
+	}
 }
 
 @media screen and (max-width: 400px) {
