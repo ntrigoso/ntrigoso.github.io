@@ -122,13 +122,13 @@ span{
   .list1 {   
     flex-direction: column;
   }
-.top .bottom .home .list1{
+  .top .bottom .home .list1{
 	flex-direction: row; 
 	}
 }
 
 @media screen and (max-width: 400px) {
-  .list a {
+  .list a .top .bottom .home{
     float: none;
     width: 100%;
   }
