@@ -55,7 +55,7 @@ a:hover {
 }
 
 
-.header {
+.top {
   padding: 5px;
   margin-left: 10cm; 
   text-align: center;
@@ -63,7 +63,7 @@ a:hover {
   color: white;
 }
 
-.header h1 {
+.top h1 {
   font-size: 40px;
 }
 .list {
@@ -89,13 +89,13 @@ a:hover {
   color: black;
 }
 
-.row {  
+.list1 {  
   display: flex;
   flex-wrap: wrap; 
    
 }
 
-.side {
+.list2 {
   flex: 20%;
   background-color: rgba(100,100,100,0.4); 
   position: absolute; 
@@ -103,12 +103,12 @@ a:hover {
   top:0;
 }
 
-.main {   
+.home {   
   flex: 70%;
   padding: 20px;   
 }
 
-.footer {
+.bottom {
   padding: 20px;
   text-align: center;
 
@@ -119,7 +119,7 @@ span{
 }
 
 @media screen and (max-width: 700px) {
-  .row {   
+  .list1{   
     flex-direction: column;
   }
 }
@@ -130,6 +130,7 @@ span{
     width: 100%;
   }
 }
+
 
 
 
