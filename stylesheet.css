@@ -119,7 +119,7 @@ span{
 }
 
 @media screen and (max-width: 400px) {
-  .list1{   
+  .list1 .top .home .bottom{   
     flex-direction: column;
   }
 }
