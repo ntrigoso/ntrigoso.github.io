@@ -90,13 +90,17 @@ a:hover {
 }
 
 .list1 {  
+	
   display: flex;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap; 
   flex-wrap: wrap; 
    
 }
 
 .list2 {
   flex: 20%;
+  -ms-flex: 20%;
   background-color: rgba(100,100,100,0.4); 
   position: absolute; 
   width: 23%; 
@@ -122,13 +126,10 @@ span{
   .list1 {   
     flex-direction: column;
   }
-  .top .bottom .home .list1 .list2{
-	flex-direction: row; 
-	}
 }
 
 @media screen and (max-width: 400px) {
-  .list a .top .bottom .home .list1 .list2{
+  .list a {
     float: none;
     width: 100%;
   }
