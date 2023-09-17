@@ -90,15 +90,12 @@ a:hover {
 .list1 {  
 	
   display: flex;
-  display: -ms-flexbox;
-  -ms-flex-wrap: wrap; 
   flex-wrap: wrap; 
    
 }
 
 .list2 {
   flex: 20%;
-  -ms-flex: 20%;
   background-color: rgba(100,100,100,0.4);  
 }
 
