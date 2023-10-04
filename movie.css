@@ -14,8 +14,7 @@ body {
 	background-image: url("https://codd.cs.gsu.edu/~ntrigoso1/HW2/bannerbackground.png");
 }
 #contentArea{
-	margin-left: auto; 
-	margin-right: auto; 
+	margin: auto;  
 	width: 800px; 
 	border: 4px solid gray; 
 	display: flex;	
