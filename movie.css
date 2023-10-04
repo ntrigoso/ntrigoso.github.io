@@ -1,0 +1,122 @@
+/* The styling for the movie review file */
+
+body {
+	font-size: 8pt;
+	font-family: Verdana, sans-serif, Tahoma; 
+	background-image: url("https://codd.cs.gsu.edu/~ntrigoso1/HW2/background.png");
+	margin: 0;
+	padding: 0; 
+}
+#banner{
+	height: 50px; 
+}
+.header{
+	background-image: url("https://codd.cs.gsu.edu/~ntrigoso1/HW2/bannerbackground.png");
+}
+#contentArea{
+	margin-left: auto; 
+	margin-right: auto; 
+	width: 800px; 
+	border: 4px solid gray; 
+	display: flex;	
+	overflow: hidden;	
+	
+}
+
+.movieTitle{
+	font-size: 24pt;
+	text-align: center; 
+	font-family: Verdana, sans-serif, Tahoma;
+}
+.leftSection{
+	float: left; 
+	width: 550px;	
+	position: relative; 
+}
+#reviewTotal{
+	font-size: 8pt;
+	color: white; 
+	font-weight: normal;   
+	align-self: flex-end; 
+	
+}
+
+#rotten{
+	font-size: 48pt; 
+	color: red;
+	font-weight: bold; 
+	vertical-align: top;
+	background-image: url("https://codd.cs.gsu.edu/~ntrigoso1/HW2/rottenbackground.png"); 
+	height: 83px; 
+	display: flex; 
+	
+	 
+}
+
+#rotten img{
+	float: left;
+	margin-right: 5px; 
+}
+
+
+.generaloverview{
+	width: 250px; 
+	background-color: #A2B964;
+	float:right; 
+}
+#info{
+	font-family: Arial, sans-serif; 
+	padding: 10px; 
+	padding-top: 0px;
+	
+}
+.styleBold{
+	font-weight: bold;
+	padding-top: 1em; 
+}
+
+.reviewCol{
+	width: 47%;
+	margin-left: 2%;
+	
+	float:left; 
+}
+
+.review{
+	font-weight: bold; 
+	font-size: 8pt; 
+	background-color: #E1D697; 
+	border: 2px solid grey; 
+	padding: 8px; 
+	position: relative;  
+	overflow: hidden; 
+}
+.reviewer{
+	margin-bottom: 3em; 
+	
+}
+
+.reviewer span{
+	font-style: italic; 
+
+}	
+
+p img{
+	
+	padding-right: 5px; 
+	float: left; 
+}
+
+#reviewCounts{
+	background-color: #A2B964;
+	padding: 5px; 
+	position: absolute;  
+	text-align: center; 
+	bottom: 0px; 
+	width: 550px; 
+}
+.bottom {
+	position: fixed;
+	right: 0;
+	bottom: 0; 
+}
