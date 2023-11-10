@@ -1,0 +1,34 @@
+header{
+	text-align: center; 
+}
+main {
+	
+	width: 70%; 
+	display: flex; 
+	margin: auto; 
+}
+.columns{
+	
+	padding: 2em;
+	margin: 2em;  
+	border: 4px red dashed;
+}
+aside{
+	flex-basis: 33%;  
+	
+}
+.right{
+	flex-basis: 67%; 
+}
+img{
+	float:right; 
+	width: 200px; 
+}
+.p2{
+	clear: both; 
+}
+.p3{
+	
+	position: fixed;
+	bottom: 5px; 
+}

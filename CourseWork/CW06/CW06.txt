@@ -1,0 +1,8 @@
+Exercise 0: 
+https://codd.cs.gsu.edu/~ntrigoso1/CW06/formtest.html
+
+Exercises 1-4: 
+https://codd.cs.gsu.edu/~ntrigoso1/CW06/buyagrade.html
+
+Code for sucker.php: 
+https://codd.cs.gsu.edu/~ntrigoso1/CW06/suckerPHPcode.txt 

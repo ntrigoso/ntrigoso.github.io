@@ -1,0 +1,32 @@
+	.h1{
+	color:red; 
+	margin-left: 2cm; 
+	}
+	.h2{
+	color:red; 
+	margin-left: 4cm; 
+	}
+	p{
+	text-indent: 2cm;
+	color: darkred; 
+	margin-left: 6cm; 
+	}
+	h3, h4{
+	text-align: center; 
+	}
+	.class2	{
+		margin-right: 4cm; 
+		margin-left: 4cm;
+		font-size: 12pt; 
+		padding: 8px;
+	}
+	a:hover {
+		background-color: yellow;
+  }
+  a{
+		font-size: 14pt; 
+	}
+	
+  .center{
+	text-align: center; 
+  }
