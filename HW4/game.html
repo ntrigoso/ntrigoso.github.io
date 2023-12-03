@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- Webpro Fall 2023 Da best -->
+<!-- Author: Nadia Trigoso -->
+<!-- Date: 11/21/2023 -->
+<!-- Validated: OK 4 sure -->
+<html lang = "en">
+<head>
+    <title>Matching Game</title>
+	<!-- Get the style for the game --> 
+    <link href="game.css" type="text/css" rel="stylesheet">
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Uses the javascript for the game --> 
+	<script src='game.js'></script>
+</head>
+<body>
+	<!-- Gives the title of the game --> 
+    <h1>Matching Game!</h1>
+	<section> 
+	<!-- Asks user for the amount of pictures they would like --> 
+		<h4>Select the number of images: </h4>
+		<form> 
+			<input type="radio" id="8" name="pictures" value="8" onclick='check()'> 8 Pictures 
+			<input type="radio" id="10" name="pictures" value="10" onclick='check()'> 10 Pictures 
+			<input type="radio" id="12" name="pictures" value="12" onclick='check()'> 12 Pictures
+			 
+		</form>
+		</section> 
+		<section> 
+		<!-- Asks user for the level of difficulty they would like --> 
+			<h4> Select the level of dificluty: </h4> 
+			<form> 
+				<input type = "radio" name = "level" id="easy" > Easy 
+				<input type = "radio" name = "level" id="medium" > Medium 
+				<input type = "radio" name = "level" id="hard" >Hard 
+			</form> 
+		</section> 
+		<section> 
+		
+		<!-- user has to press button to start the game --> 
+			<h4> <button id = "ready" onclick = 'start()'>CLICK HERE when ready to play</button> </h4> 
+		</section> 
+		
+	 <!-- Inserts timer and game display that is created from javascript --> 
+    <h2 id="timer"> Timer</h2>
+	<section id = "winner"><h4> Good Luck! </h4> </section> <br> 
+    <div id="gameboard">
+	
+	
+	</div>
+	
+	<a href= "payroll.html" class = "begin"> Go Back to Part A</a>
+</body>
+</html>

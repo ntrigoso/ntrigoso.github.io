@@ -1,0 +1,14 @@
+Codd server links: 
+MAIN PAGE:  
+	https://codd.cs.gsu.edu/~ntrigoso1/HW3/index.php
+
+
+Other links in codd server: 
+	https://codd.cs.gsu.edu/~ntrigoso1/HW3/signup.php
+	https://codd.cs.gsu.edu/~ntrigoso1/HW3/signup-submit.php
+	https://codd.cs.gsu.edu/~ntrigoso1/HW3/matches.php
+	https://codd.cs.gsu.edu/~ntrigoso1/HW3/matches-submit.php
+	https://codd.cs.gsu.edu/~ntrigoso1/HW3/common.php
+
+
+

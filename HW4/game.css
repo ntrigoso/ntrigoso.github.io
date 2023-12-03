@@ -1,0 +1,51 @@
+/* style for each element within the game board */
+#gameboard > div{
+	border: 20px solid #d2e4feff;
+	float:left;
+	
+	
+}
+/* style of overall gameboard */
+#gameboard{
+	width: 800px;
+	height: 800px;
+	margin-left: auto; 
+	margin-right: auto; 
+	
+}
+div {
+	width: 150px;
+	height: 150px;
+	
+
+}
+/* style for headings */ 
+h1, h2{
+	text-align: center; 
+}
+/* font used for whole game */
+*{
+	font-family: Verdana, sans-serif; 
+	
+}
+/* style for the form */ 
+section, #center{
+	display: flex; 
+	align-items: center; 
+	justify-content: center;
+	
+}
+button, .begin {
+	display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+	
+}
+button:hover, .begin:hover {
+	background-color: #2980b9;
+}
+

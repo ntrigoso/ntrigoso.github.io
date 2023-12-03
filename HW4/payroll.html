@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<!-- Webpro Fall 2023 Da best -->
+<!-- Author: Nadia Trigoso -->
+<!-- Date: 11/21/2023 -->
+<!-- Validated: OK 4 sure -->
+
+<html lang="en">
+<head>
+<!-- style for the html --> 
+<style>
+	table, th, td {
+		border: 2px solid;
+	}
+	.partB{
+		display: inline-block;
+		padding: 10px 20px;
+		background-color: #000000;
+		color: #fff;
+		text-decoration: none;
+		border-radius: 8px;
+		transition: background-color 0.3s ease;
+	}
+	.partB:hover{
+		background-color: #686868;
+	}
+	
+</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <title>Payroll</title>
+	<!-- Uses the javascript for the game --> 
+	<script src="payroll.js"></script>
+</head>
+<body>
+    <h1> Homework 4: Part A</h1> 
+	<!--Table for displaying the information or each employee --> 
+     <table>
+		<tr>
+            <th>Index of Employee</th>
+            <th>Hours Worked</th>
+            <th>Pay for the Week</th>
+        </tr>
+
+        <tbody id="payroll"> </tbody>
+    </table>
+	<!--Shows the total pay for all employees--> 
+    <p id="total"></p>
+	
+	<!--Button for users to enter the hours of every employee --> 
+	<div> 
+		<button onclick="entries()">Please Enter Employee Hours</button>
+	</div>
+<div> 
+<br> <br> <br> 
+<!--Link to Part B of the Homework --> 
+ <a href = "main.html" class = "partB">  Link to Part B </a> 
+</div> 
+</body>
+</html>
