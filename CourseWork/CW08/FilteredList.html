@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+	<link rel="stylesheet" href="./FilteredList_files/bootstrap.min.css" integrity="sha384-
+BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <script defer="" src="./FilteredList_files/bundle.js.download"></script><style>body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxTQUFTO0VBQ1Q7O2NBRVk7RUFDWixtQ0FBbUM7RUFDbkMsa0NBQWtDO0FBQ3BDOztBQUVBO0VBQ0U7YUFDVztBQUNiIiwic291cmNlc0NvbnRlbnQiOlsiYm9keSB7XG4gIG1hcmdpbjogMDtcbiAgZm9udC1mYW1pbHk6IC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgJ1JvYm90bycsICdPeHlnZW4nLFxuICAgICdVYnVudHUnLCAnQ2FudGFyZWxsJywgJ0ZpcmEgU2FucycsICdEcm9pZCBTYW5zJywgJ0hlbHZldGljYSBOZXVlJyxcbiAgICBzYW5zLXNlcmlmO1xuICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcbn1cblxuY29kZSB7XG4gIGZvbnQtZmFtaWx5OiBzb3VyY2UtY29kZS1wcm8sIE1lbmxvLCBNb25hY28sIENvbnNvbGFzLCAnQ291cmllciBOZXcnLFxuICAgIG1vbm9zcGFjZTtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.filter-list{
+	border: 1px solid black; 
+	background-color: #F5F5F5; 
+	display: flex; 
+	width: 80%; 
+	margin-left:auto; 
+	margin-right: auto; 
+	justify-content: center; 
+	align-items: center; 
+	flex-direction: column; 
+	padding: 10px; 
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9BcHAuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsY0FBYztFQUNkLG9CQUFvQjtBQUN0Qjs7QUFFQTtFQUNFO0lBQ0UsNENBQTRDO0VBQzlDO0FBQ0Y7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIsaUJBQWlCO0VBQ2pCLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25CLHVCQUF1QjtFQUN2Qiw2QkFBNkI7RUFDN0IsWUFBWTtBQUNkO0FBQ0E7Q0FDQyx1QkFBdUI7Q0FDdkIseUJBQXlCO0NBQ3pCLGFBQWE7Q0FDYixVQUFVO0NBQ1YsZ0JBQWdCO0NBQ2hCLGtCQUFrQjtDQUNsQix1QkFBdUI7Q0FDdkIsbUJBQW1CO0NBQ25CLHNCQUFzQjtDQUN0QixhQUFhO0FBQ2Q7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBO0VBQ0U7SUFDRSx1QkFBdUI7RUFDekI7RUFDQTtJQUNFLHlCQUF5QjtFQUMzQjtBQUNGIiwic291cmNlc0NvbnRlbnQiOlsiLkFwcCB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLkFwcC1sb2dvIHtcbiAgaGVpZ2h0OiA0MHZtaW47XG4gIHBvaW50ZXItZXZlbnRzOiBub25lO1xufVxuXG5AbWVkaWEgKHByZWZlcnMtcmVkdWNlZC1tb3Rpb246IG5vLXByZWZlcmVuY2UpIHtcbiAgLkFwcC1sb2dvIHtcbiAgICBhbmltYXRpb246IEFwcC1sb2dvLXNwaW4gaW5maW5pdGUgMjBzIGxpbmVhcjtcbiAgfVxufVxuXG4uQXBwLWhlYWRlciB7XG4gIGJhY2tncm91bmQtY29sb3I6ICMyODJjMzQ7XG4gIG1pbi1oZWlnaHQ6IDEwMHZoO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgZm9udC1zaXplOiBjYWxjKDEwcHggKyAydm1pbik7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cbi5maWx0ZXItbGlzdHtcblx0Ym9yZGVyOiAxcHggc29saWQgYmxhY2s7IFxuXHRiYWNrZ3JvdW5kLWNvbG9yOiAjRjVGNUY1OyBcblx0ZGlzcGxheTogZmxleDsgXG5cdHdpZHRoOiA4MCU7IFxuXHRtYXJnaW4tbGVmdDphdXRvOyBcblx0bWFyZ2luLXJpZ2h0OiBhdXRvOyBcblx0anVzdGlmeS1jb250ZW50OiBjZW50ZXI7IFxuXHRhbGlnbi1pdGVtczogY2VudGVyOyBcblx0ZmxleC1kaXJlY3Rpb246IGNvbHVtbjsgXG5cdHBhZGRpbmc6IDEwcHg7IFxufVxuXG4uQXBwLWxpbmsge1xuICBjb2xvcjogIzYxZGFmYjtcbn1cblxuQGtleWZyYW1lcyBBcHAtbG9nby1zcGluIHtcbiAgZnJvbSB7XG4gICAgdHJhbnNmb3JtOiByb3RhdGUoMGRlZyk7XG4gIH1cbiAgdG8ge1xuICAgIHRyYW5zZm9ybTogcm90YXRlKDM2MGRlZyk7XG4gIH1cbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="App"><h1>Hello, Nadia Trigoso!</h1><div class="counter"><h1>7</h1><button fdprocessedid="mm7y4"> Click Me </button></div><div class="filter-list"><h1>Produce Search</h1><div class="dropdown"><button type="button" id="typeDropdown" aria-expanded="false" class="dropdown-toggle btn btn-primary" fdprocessedid="u2t9sr">all</button><div x-placement="bottom-start" aria-labelledby="typeDropdown" class="dropdown-menu" data-popper-reference-hidden="false" data-popper-escaped="false" data-popper-placement="bottom-start" style="position: absolute; inset: 0px auto auto 0px; transform: translate3d(0px, 36px, 0px);"><a aria-selected="false" data-rr-ui-dropdown-item="" class="dropdown-item" role="button" tabindex="0" href="http://localhost:3000/#"> All </a><a aria-selected="false" data-rr-ui-dropdown-item="" class="dropdown-item" role="button" tabindex="0" href="http://localhost:3000/#"> Fruit </a><a aria-selected="false" data-rr-ui-dropdown-item="" class="dropdown-item" role="button" tabindex="0" href="http://localhost:3000/#"> Vegetable </a></div></div><input type="text" placeholder="Search" fdprocessedid="xsrdqau"><ul><li>Apple</li><li>Pineapple</li><li>Banana</li><li>Pear</li><li>Strawberry</li><li>Orange</li><li>Lettuce</li><li>Cucumber</li><li>Eggplant</li><li>Squash</li><li>Bell pepper</li><li>Onion</li></ul></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  
+
+</body></html>
