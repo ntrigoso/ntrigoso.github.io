@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang= "en">
+<!-- Webpro Fall 2023 Da best -->
+<!-- Author: Nadia Trigoso -->
+<!-- Date: 11/19/2023 -->
+<!-- Validated: OK 4 sure -->
+<head>
+<script>
+        function formValidation() {
+            //Gets rid or previous error messages if there were any 
+            clearErrors();
+
+            // Gets input from form 
+            var id = document.getElementById('id').value.trim();
+            var firstName = document.getElementById('firstName').value.trim();
+            var lastName = document.getElementById('lastName').value.trim();
+
+           //array for no user input
+            var errors1 = [];
+			
+			//array for invalid user input 
+			var errors2 = []; 
+            
+			//checks if id has no input 
+            if (id === '') {
+                errors1.push('ID');
+                document.getElementById('idError').innerHTML = 'Please Enter an ID';
+				
+				//checks if user input for ID is valid 
+            } else {
+				var regex = /^[0-9]+$/;
+				if(regex.test(id) === false) {
+					errors2.push('ID'); 
+					document.getElementById('idError').innerHTML = 'Please Enter a Valid ID';
+				}
+			}
+			
+			//checks if first name has no input 
+            if (firstName === '') {
+                errors1.push('FirstName');
+                document.getElementById('firstNameError').innerHTML = 'Please Enter First Name';
+				
+				//checks if user input for first name is valid 
+            } else {
+				var regex = /^[a-zA-Z\s]+$/;
+				if(regex.test(firstName) === false) {
+					errors2.push('First Name'); 
+					document.getElementById('firstNameError').innerHTML = 'Please Enter a Valid First Name';
+				}
+			}
+			
+			//checks if last name has input 
+            if (lastName === '') {
+                errors1.push('LastName');
+                document.getElementById('lastNameError').innerHTML = 'Please Enter Last Name';
+				
+				//checks if user input for last name is valid 
+            } else {
+				var regex = /^[a-zA-Z\s]+$/;
+				if(regex.test(lastName) === false) {
+					errors2.push('Last Name'); 
+					document.getElementById('lastNameError').innerHTML = 'Please Enter a Valid Last Name';
+				}
+			}
+
+            //if there any values with no user input 
+            if (errors1.length > 0) {
+			
+				//message displayed 
+                alert('You forgot to fill in the following field(s) ' + errors1.join(', '));
+            }
+			
+			//if there are any values with invalid user input 
+			if(errors2.length > 0) {
+				//message displayed 
+				alert('Invalid information for ' + errors2.join(', ')); 
+				
+			} 
+			//if there are no errors at all 
+			else if(errors1.length === 0 && errors2.length === 0) {
+				
+				details(id, firstName, lastName);
+				clearForm(); 
+               
+            }
+        }
+		//function for clearing any previous error messages 
+		function clearErrors() {
+            document.getElementById('idError').innerHTML = '';
+            document.getElementById('firstNameError').innerHTML = '';
+            document.getElementById('lastNameError').innerHTML = '';
+        }
+		
+		//function for displaying the results at the end of the page 
+        function details(id, firstName, lastName) {
+            var displayDetails = document.getElementById('detailsAdded');
+            displayDetails.innerHTML = "<br/> UserID: " + id + "<br/> First Name: " + firstName + 
+			"<br/> Last Name: " + lastName; 
+                
+        }
+		//function for clearing the input values after previous data has been added 
+		function clearForm() {
+            document.getElementById('Validate').reset();
+        }
+
+
+        
+    </script>
+    <title>CW07:Part1</title>
+    <style>
+        .error {
+            color: red;
+			text-decoration: underline; 
+        }
+    </style>
+</head>
+<body>
+<h1> CW07 Part 1: Validation </h1> 
+    <form id="Validate">
+		<table> 
+        <tr>
+            <td> <br> ID: </td> 
+			<td> <span id="idError" class="error"></span> <br> 
+			<input type="text" id="id"> </td> 
+            
+        </tr>
+        <tr>
+            <td> <br> FirstName: </td> 
+			<td> <span id="firstNameError" class="error"></span> <br> 
+			<input type="text" id="firstName"> </td> 
+            
+        </tr>
+        <tr>
+            <td> <br>LastName: </td> 
+			<td> <span id="lastNameError" class="error"></span> <br> 
+			<input type="text" id="lastName"> </td> 
+            
+        </tr>
+		<tr> 
+		<td></td> 
+		<td> 
+        <button type="button" onclick="formValidation()">Add</button>
+		</td> 
+		</tr> 
+		</table> 
+    </form>
+
+    <div id="detailsAdded"></div>
+
+    
+</body>
+</html>
